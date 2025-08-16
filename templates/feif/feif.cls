@@ -574,7 +574,8 @@
   \pagestyle{fancy}
   \fancypagestyle{abstract}{\fancyhead[L]{\abstractname}}
   \thispagestyle{abstract}
-  \section*{\abstractname} 
+  \section*{\abstractname}
+  \phantomsection
   \addcontentsline{toc}{section}{\abstractname}
 }
 {  
@@ -587,7 +588,8 @@
   \pagestyle{fancy}
   \clearpage
   \fancypagestyle{acknowledgement}{\fancyhead[L]{\acknowledgementname}}
-  \thispagestyle{acknowledgement}  
+  \thispagestyle{acknowledgement}
+  \phantomsection
   \addcontentsline{toc}{section}{\acknowledgementname}
 }
 {  
