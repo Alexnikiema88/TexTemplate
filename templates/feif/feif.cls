@@ -461,6 +461,14 @@
   \pagenumbering{arabic}
 }
 
+\newcommand\contents
+{
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{\contentsname}
+  \tableofcontents
+}
+
 % Backmatter
 \newcommand\backmatter
 {
@@ -474,7 +482,8 @@
 \let\oldlistoffigures\listoffigures
 \renewcommand{\listoffigures}
 {
-    \iftotalfigures
+  \iftotalfigures
+        \clearpage
         \phantomsection
         \addcontentsline{toc}{section}{\listfigurename}
         \oldlistoffigures
@@ -485,7 +494,8 @@
 \let\oldlistoftables\listoftables
 \renewcommand{\listoftables}
 {
-    \iftotaltables
+  \iftotaltables
+        \clearpage
         \phantomsection
         \addcontentsline{toc}{section}{\listtablename}
         \oldlistoftables
