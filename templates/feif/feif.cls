@@ -531,11 +531,10 @@
 {    
   \IfFileExists{\FEIFCountEntriesFileName}{\input{\FEIFCountEntriesFileName}}{}
   \ifdefined\AcronymsUsed
-      \ifnum\AcronymsUsed=1    
+      \ifnum\AcronymsUsed=1
         \clearpage
         \setglossarystyle{super}
         \printglossary[type=\acronymtype]
-  
       \fi 
   \fi
 }

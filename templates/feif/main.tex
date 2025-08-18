@@ -46,10 +46,11 @@
 
 
 %\include{Verzeichnisse/Worttrennungen}
-\input{lists/acronyms}  
 \makenomenclature
+\setabbreviationstyle[acronym]{long-short}
 \InputIfExists{./lists/symbols.tex}
 \InputIfExists{./lists/glossary.tex}
+\input{lists/acronyms}
 \makeglossaries
 \begin{document}
 \maketitle
